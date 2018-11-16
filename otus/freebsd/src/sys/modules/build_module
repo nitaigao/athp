@@ -8,7 +8,7 @@ X_KMODGRP=${X_KMODGRP:="adrian"}
 X_PATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 # This allows for -HEAD includes for net80211 ..
-env CFLAGS="-I../../../sys/" \
+env CFLAGS="-I../../../sys/ -DINVARIANTS" \
 make \
 	MODULES_OVERRIDE="" \
 	DEBUG_FLAGS="-g" \
