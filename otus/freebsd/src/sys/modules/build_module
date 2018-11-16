@@ -9,7 +9,7 @@ X_PATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 # This allows for -HEAD includes for net80211 ..
 env CFLAGS="-I../../../sys/" \
-echo make \
+make \
 	MODULES_OVERRIDE="" \
 	DEBUG_FLAGS="-g" \
 	DEBUG_FLAGS="-g" \
